@@ -27,6 +27,11 @@
         .controls button:hover {
             background-color: #005fa3;
         }
+        iframe {
+            width: 1024px;
+            height: 768px;
+            border: none;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -61,7 +66,7 @@
                     <li><a href="https://mauriciopaqu.github.io/Where-is-Anitta/" target="_blank">View on GitHub</a></li>
                 </ul>
                 <div class="videocenter">
-                    <iframe src="https://editor.p5js.org/mauriciopaqu-apricot/full/WNndGjEJh"></iframe>
+                    <iframe id="adventureGame" src="https://editor.p5js.org/mauriciopaqu-apricot/full/WNndGjEJh" allowfullscreen></iframe>
                     <div class="controls">
                         <button onclick="pauseIframe('adventureGame')">Stop</button>
                         <button onclick="playIframe('adventureGame', 'https://editor.p5js.org/mauriciopaqu-apricot/full/WNndGjEJh')">Play</button>
@@ -79,9 +84,9 @@
                     <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/tzMSdCZdP" target="_blank">Try Interactive Experience (p5.js)</a></li>
                     <li><a href="https://mauriciopaqu.github.io/findingchloe/" target="_blank">View on GitHub</a></li>
                 </ul>
-                </ul>
                 <div class="videocenter">
-                   <iframe src="https://editor.p5js.org/mauriciopaqu-apricot/full/tzMSdCZdP"></iframe>
+                    <iframe id="interactiveExperience" src="https://editor.p5js.org/mauriciopaqu-apricot/full/tzMSdCZdP" allowfullscreen></iframe>
+                    <div class="controls">
                         <button onclick="pauseIframe('interactiveExperience')">Stop</button>
                         <button onclick="playIframe('interactiveExperience', 'https://editor.p5js.org/mauriciopaqu-apricot/full/tzMSdCZdP')">Play</button>
                     </div>
@@ -98,10 +103,10 @@
                     <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/FDY4ZbTPC" target="_blank">Explore 3D Experience (p5.js)</a></li>
                 </ul>
                 <div class="videocenter">
-                    <iframe src="https://editor.p5js.org/mauriciopaqu-apricot/full/FDY4ZbTPC"></iframe>
+                    <iframe id="threeDExperience" src="https://editor.p5js.org/mauriciopaqu-apricot/full/FDY4ZbTPC" allowfullscreen></iframe>
                     <div class="controls">
                         <button onclick="pauseIframe('threeDExperience')">Stop</button>
-                        <button onclick="playIframe('threeDExperience', 'https://editor.p5js.org/mauriciopaqu-apricot/full/WNndGjEJh')">Play</button>
+                        <button onclick="playIframe('threeDExperience', 'https://editor.p5js.org/mauriciopaqu-apricot/full/FDY4ZbTPC')">Play</button>
                     </div>
                 </div>
             </section>
@@ -116,7 +121,7 @@
                     <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/9CFAmGA4w" target="_blank">Play Social Critique Game (p5.js)</a></li>
                 </ul>
                 <div class="videocenter">
-                    <iframe id="socialCritiqueGame" width="1024" height="768" src="https://editor.p5js.org/mauriciopaqu-apricot/full/9CFAmGA4w" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="socialCritiqueGame" src="https://editor.p5js.org/mauriciopaqu-apricot/full/9CFAmGA4w" allowfullscreen></iframe>
                     <div class="controls">
                         <button onclick="pauseIframe('socialCritiqueGame')">Stop</button>
                         <button onclick="playIframe('socialCritiqueGame', 'https://editor.p5js.org/mauriciopaqu-apricot/full/9CFAmGA4w')">Play</button>
@@ -154,3 +159,4 @@
 
 </body>
 </html>
+
