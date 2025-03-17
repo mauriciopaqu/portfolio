@@ -1,127 +1,146 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
-    <title>Mauricio Padilla-Portfolio</title>
+    <title>Projects</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        body {
-            background: linear-gradient(135deg, #0d0d0d, #1f1f1f);
-            color: #e0e0e0;
-            font-family: 'Orbitron', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        #header {
-            background: linear-gradient(90deg, #606060, #303030);
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .videocenter {
+            position: relative;
+            margin: 20px auto;
             text-align: center;
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
         }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #f5f5f5;
-            text-decoration: none;
+        .controls {
+            margin: 10px 0;
         }
-        #nav {
-            display: flex;
-            justify-content: center;
-            background: #222;
-            padding: 15px 0;
-        }
-        #nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        #nav ul li {
-            margin: 0 15px;
-        }
-        #nav ul li a {
-            color: #e0e0e0;
+        .controls button {
+            padding: 10px 15px;
+            margin: 5px;
             font-size: 16px;
-            text-transform: uppercase;
-            text-decoration: none;
-            padding: 8px 12px;
-            transition: 0.3s;
-            border-radius: 5px;
-        }
-        #nav ul li a:hover {
-            background: #00bcd4;
-            color: #111;
-            text-shadow: 0 0 5px #00bcd4;
-        }
-        .post {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 40px auto;
-            width: 80%;
-            max-width: 800px;
-            backdrop-filter: blur(6px);
-            transition: transform 0.3s;
-        }
-        .post:hover {
-            transform: scale(1.03);
-        }
-        h2 {
-            font-size: 26px;
-            color: #00bcd4;
-            text-shadow: 0 0 8px #00bcd4;
-        }
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border: 2px solid #00bcd4;
-            box-shadow: 0 0 10px #00bcd4;
-            margin-top: 15px;
-        }
-        .actions input[type="submit"] {
-            background: #00bcd4;
-            color: #111;
-            font-size: 16px;
-            border-radius: 5px;
-            border: none;
-            padding: 12px 18px;
-            transition: 0.3s;
             cursor: pointer;
-        }
-        .actions input[type="submit"]:hover {
-            background: #008ba3;
+            border: none;
+            background-color: #0078d4;
             color: #fff;
+            border-radius: 5px;
+        }
+        .controls button:hover {
+            background-color: #005fa3;
+        }
+        iframe {
+            width: 1024px;
+            height: 768px;
+            border: none;
         }
     </style>
 </head>
+<body class="is-preload">
 
-<body>
-    <div id="wrapper" class="fade-in">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
         <header id="header">
-            <a href="index.html" class="logo">Mauricio Padilla - Portfolio</a>
+            <a href="index.html" class="logo">Projects</a>
         </header>
+
+        <!-- Nav -->
         <nav id="nav">
-            <ul>
-                <li class="active"><a href="index.html">About me</a></li>
-                <li><a href="generic.html">Projects</a></li>
+            <ul class="links">
+                <li><a href="index.html">About</a></li>
+                <li class="active"><a href="generic.html">Projects</a></li>
             </ul>
         </nav>
-        <div id="main">
-            <section class="post featured">
-                <header class="major">
-                    <h2>Who am I?</h2>
-                    <p>My name is Mauricio Padilla Quintero. With expertise in communication, journalism, and digital media production, I bring a futuristic approach to creative storytelling.</p>
-                    <img src="images/pic01.jpeg" alt="Mauricio Padilla" />
-                </header>
-            </section>
-        </div>
-    </div>
-</body>
 
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Project 1: Adventure Game -->
+            <section class="post">
+                <header class="major">
+                    <h2>Adventure Game</h2>
+                    <p>Explore "Where is Anitta?" an exciting horror adventure through interactive gameplay in a beautiful pixel art. In this short videogame your decisions are going to be key to survive.</p>
+                </header>
+                <ul>
+                    <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/WNndGjEJh" target="_blank">Play Adventure Game (p5.js)</a></li>
+                    <li><a href="https://mauriciopaqu.github.io/Where-is-Anitta/" target="_blank">View on GitHub</a></li>
+                </ul>
+                </div>
+            </section>
+
+            <!-- Project 2: Interactive Experience -->
+            <section class="post">
+                <header class="major">
+                    <h2>Interactive Experience</h2>
+                    <p>Engage with "Finding Chloe" a unique psychological horror interactive digital experience with social impact, where you are a father looking for his daughter. Explore all the rooms to know more about the reality.</p>
+                </header>
+                <ul>
+                    <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/tzMSdCZdP" target="_blank">Try Interactive Experience (p5.js)</a></li>
+                    <li><a href="https://mauriciopaqu.github.io/findingchloe/" target="_blank">View on GitHub</a></li>
+                </ul>
+                </div>
+            </section>
+
+            <!-- Project: 3D Experience -->
+            <section class="post">
+                <header class="major">
+                    <h2>3D Experience</h2>
+                    <p>Welcome to Runway. A captivating 3D experience showcasing advanced visuals about the beauty of virtual art to design spaces.</p>
+                </header>
+                <ul>
+                    <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/FDY4ZbTPC" target="_blank">Explore 3D Experience (p5.js)</a></li>
+                    <li><a href="https://mauriciopaqu.github.io/Runway/" target="_blank">View on GitHub</a></li>
+                </ul>
+                <div class="videocenter">
+                    <iframe id="threeDExperience" src="https://editor.p5js.org/mauriciopaqu-apricot/full/FDY4ZbTPC" allowfullscreen></iframe>
+                    <div class="controls">
+                        <button onclick="pauseIframe('threeDExperience')">Stop</button>
+                        <button onclick="playIframe('threeDExperience', 'https://editor.p5js.org/mauriciopaqu-apricot/full/FDY4ZbTPC')">Play</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project: Social Critique Game -->
+            <section class="post">
+                <header class="major">
+                    <h2>Social Critique Game</h2>
+                    <p>An interactive game exploring social critique about authoritarism through storytelling. Through satire, this short videogame takes us to a fictional island in the caribbean where the protagonist crashed and must take decisions to survive.</p>
+                </header>
+                <ul>
+                    <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/9CFAmGA4w" target="_blank">Play Social Critique Game (p5.js)</a></li>
+                     <li><a href="https://mauriciopaqu.github.io/Dictators-Island/" target="_blank">View on GitHub</a></li>
+                </ul>
+            
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <!-- Add footer content here -->
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Function to stop the iframe by removing its src
+        function pauseIframe(id) {
+            const iframe = document.getElementById(id);
+            if (iframe) {
+                iframe.src = '';
+            }
+        }
+
+        // Function to play/restart the iframe by setting its src
+        function playIframe(id, src) {
+            const iframe = document.getElementById(id);
+            if (iframe) {
+                iframe.src = src;
+            }
+        }
+    </script>
+
+</body>
 </html>
