@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-    Mauricio Padilla-Portfolio
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -11,115 +6,98 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            color: #ddd;
+            font-family: 'Orbitron', sans-serif;
+        }
+        #header {
+            background: linear-gradient(90deg, #silver, #gray, #black);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+        #nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px 0;
+        }
+        #nav ul li a {
+            color: #ddd;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        #nav ul li a:hover {
+            color: #00ffff;
+            text-shadow: 0 0 8px #00ffff;
+        }
+        .post {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            transition: transform 0.3s;
+        }
+        .post:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            font-size: 28px;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+        img {
+            border-radius: 10px;
+            border: 2px solid #00ffff;
+            box-shadow: 0 0 10px #00ffff;
+        }
+        .actions input[type="submit"] {
+            background: #00ffff;
+            color: #111;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+        .actions input[type="submit"]:hover {
+            background: #007777;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
-
-        <!-- Intro -->
-        <div id="intro">
-            <h1>Hey!<br />Welcome!</h1>
-            <p>I'm Mauricio Padilla. Specialist in communication, journalism, and digital media production<a href="https://html5up.net/license"></a>.</p>
-        </div>
-
-        <!-- Nav -->
+        <header id="header">
+            <a href="index.html" class="logo">Mauricio Padilla - Portfolio</a>
+        </header>
         <nav id="nav">
             <ul class="links">
                 <li class="active"><a href="index.html">About me</a></li>
                 <li><a href="generic.html">Projects</a></li>
             </ul>
-            <ul class="icons">
-                <li>
-                    <a href="https://www.instagram.com/paurizzio/" class="icon brands fa-instagram" target="_blank">
-                        <span class="label">Instagram</span>
-                    </a>
-                </li>
-            </ul>
         </nav>
-
-        <!-- Main -->
         <div id="main">
-
-            <!-- Featured Post -->
-            <article class="post featured">
+            <section class="post featured">
                 <header class="major">
-                    <span class="date"></span>
                     <h2>Who am I?</h2>
-                    <p>My name is Mauricio Padilla Quintero. With social communication, journalism, and marketing studies, I've developed multiple skills that are fundamental in the communication field. Writing, editing (photography, audio, AR filters and video), design, research, translation, production of strategies, creation of diagnosis, performance reports, and social media management are some of them. I have experience in internal and external communications, stakeholder management, social media, analysis, and more.</p>
-                    <img src="images/pic01.jpeg" alt="" height="400" style="width: auto;" />
+                    <p>My name is Mauricio Padilla Quintero. With expertise in communication, journalism, and digital media production, I bring a futuristic approach to creative storytelling.</p>
+                    <img src="images/pic01.jpeg" alt="Mauricio Padilla" height="400" style="width: auto;" />
                 </header>
-                <ul class="actions special">
-                </ul>
-            </article>
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <section>
-                <form method="post" action="mailto:mauriciopaqu@gmail.com">
-                    <div class="fields">
-                        <div class="field">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" />
-                        </div>
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" /></li>
-                    </ul>
-                </form>
             </section>
-            <section class="split contact">
-                <section class="alt">
-                    <h3>Bogotá-Orlando</h3>
-                </section>
-                <section>
-                    <h3>Phone</h3>
-                    <p><a href="#">+1 (407) 264-1108</a></p>
-                </section>
-                <section>
-                    <h3>Email</h3>
-                    <p><a href="mailto:mauriciopaqu@gmail.com">mauriciopaqu@gmail.com</a></p>
-                </section>
-                <section>
-                    <h3>Social</h3>
-                    <ul class="icons alt">
-                        <li>
-                            <a href="https://www.instagram.com/paurizzio/" class="icon brands alt fa-instagram" target="_blank">
-                                <span class="label">Instagram</span>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </section>
-        </footer>
-
-        <!-- Copyright -->
-        <div id="copyright">
-            <ul>
-                <li>&copy; Mauricio Padilla Quintero</li>
-                
-            </ul>
         </div>
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
