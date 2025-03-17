@@ -6,142 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        .videocenter {
-            position: relative;
-            margin: 20px auto;
+        body {
+            background-color: #111;
+            color: #eee;
+            font-family: 'Arial', sans-serif;
+        }
+        #header {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            padding: 20px;
             text-align: center;
         }
-        .controls {
-            margin: 10px 0;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        #nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            list-style: none;
+        }
+        #nav ul li {
+            margin: 0 15px;
+        }
+        #nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        #nav ul li a:hover {
+            color: #ff416c;
+        }
+        .post {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .post:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            font-size: 28px;
+            color: #ff416c;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li a {
+            color: #ff4b2b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        .videocenter {
+            text-align: center;
         }
         .controls button {
-            padding: 10px 15px;
-            margin: 5px;
-            font-size: 16px;
-            cursor: pointer;
+            padding: 10px 20px;
+            margin: 10px;
             border: none;
-            background-color: #0078d4;
-            color: #fff;
+            cursor: pointer;
+            background: #ff416c;
+            color: white;
+            font-size: 16px;
             border-radius: 5px;
+            transition: 0.3s;
         }
         .controls button:hover {
-            background-color: #005fa3;
-        }
-        iframe {
-            width: 1024px;
-            height: 768px;
-            border: none;
+            background: #ff4b2b;
         }
     </style>
 </head>
-<body class="is-preload">
-
-    <!-- Wrapper -->
+<body>
     <div id="wrapper">
-
-        <!-- Header -->
         <header id="header">
             <a href="index.html" class="logo">Projects</a>
         </header>
-
-        <!-- Nav -->
         <nav id="nav">
             <ul class="links">
                 <li><a href="index.html">About</a></li>
                 <li class="active"><a href="generic.html">Projects</a></li>
             </ul>
         </nav>
-
-        <!-- Main -->
         <div id="main">
-
-            <!-- Project 1: Adventure Game -->
             <section class="post">
                 <header class="major">
                     <h2>Adventure Game</h2>
-                    <p>Explore "Where is Anitta?" an exciting horror adventure through interactive gameplay in a beautiful pixel art. In this short videogame your decisions are going to be key to survive.</p>
+                    <p>Explore "Where is Anitta?" an exciting horror adventure.</p>
                 </header>
                 <ul>
-                    <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/WNndGjEJh" target="_blank">Play Adventure Game (p5.js)</a></li>
-                    <li><a href="https://mauriciopaqu.github.io/Where-is-Anitta/" target="_blank">View on GitHub</a></li>
+                    <li><a href="#">Play Adventure Game</a></li>
+                    <li><a href="#">View on GitHub</a></li>
                 </ul>
-                </div>
             </section>
-
-            <!-- Project 2: Interactive Experience -->
-            <section class="post">
-                <header class="major">
-                    <h2>Interactive Experience</h2>
-                    <p>Engage with "Finding Chloe" a unique psychological horror interactive digital experience with social impact, where you are a father looking for his daughter. Explore all the rooms to know more about the reality.</p>
-                </header>
-                <ul>
-                    <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/tzMSdCZdP" target="_blank">Try Interactive Experience (p5.js)</a></li>
-                    <li><a href="https://mauriciopaqu.github.io/findingchloe/" target="_blank">View on GitHub</a></li>
-                </ul>
-                </div>
-            </section>
-
-            <!-- Project: 3D Experience -->
-            <section class="post">
-                <header class="major">
-                    <h2>3D Experience</h2>
-                    <p>Welcome to Runway. A captivating 3D experience showcasing advanced visuals about the beauty of virtual art to design spaces.</p>
-                </header>
-                <ul>
-                    <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/FDY4ZbTPC" target="_blank">Explore 3D Experience (p5.js)</a></li>
-                    <li><a href="https://mauriciopaqu.github.io/Runway/" target="_blank">View on GitHub</a></li>
-                </ul>
-                <div class="videocenter">
-                    <iframe id="threeDExperience" src="https://editor.p5js.org/mauriciopaqu-apricot/full/FDY4ZbTPC" allowfullscreen></iframe>
-                    <div class="controls">
-                        <button onclick="pauseIframe('threeDExperience')">Stop</button>
-                        <button onclick="playIframe('threeDExperience', 'https://editor.p5js.org/mauriciopaqu-apricot/full/FDY4ZbTPC')">Play</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Project: Social Critique Game -->
-            <section class="post">
-                <header class="major">
-                    <h2>Social Critique Game</h2>
-                    <p>An interactive game exploring social critique about authoritarism through storytelling. Through satire, this short videogame takes us to a fictional island in the caribbean where the protagonist crashed and must take decisions to survive.</p>
-                </header>
-                <ul>
-                    <li><a href="https://editor.p5js.org/mauriciopaqu-apricot/sketches/9CFAmGA4w" target="_blank">Play Social Critique Game (p5.js)</a></li>
-                     <li><a href="https://mauriciopaqu.github.io/Dictators-Island/" target="_blank">View on GitHub</a></li>
-                </ul>
-            
-                </div>
-            </section>
-
         </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <!-- Add footer content here -->
-        </footer>
-
     </div>
-
-    <!-- Scripts -->
-    <script>
-        // Function to stop the iframe by removing its src
-        function pauseIframe(id) {
-            const iframe = document.getElementById(id);
-            if (iframe) {
-                iframe.src = '';
-            }
-        }
-
-        // Function to play/restart the iframe by setting its src
-        function playIframe(id, src) {
-            const iframe = document.getElementById(id);
-            if (iframe) {
-                iframe.src = src;
-            }
-        }
-    </script>
-
 </body>
 </html>
-
